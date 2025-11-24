@@ -1,16 +1,77 @@
-# Abstract
-This project aims to develop an intelligent, automated system for evaluating Qur’anic recitation with a focus on **Tajweed rule correctness**, providing students with objective, immediate, and personalized feedback. Traditional Tajweed learning requires continuous supervision from qualified sheikhs, limiting accessibility and slowing down progress—especially for beginners and remote learners. Our system addresses this gap by combining **deep learning**, **signal processing**, and **information systems design** to build a scalable digital learning platform.
-The scope of the project includes:
+# 📖 The Interactive Platform for Recitation and Learning the Qur’an
 
-1. **Automatic detection and evaluation of selected Tajweed rules**—specifically _Al-Mad_, _Ghunnah_, and _Ikhfaa_.
+**A Comprehensive Educational Ecosystem Bridging Global Learners with Qualified Teachers**
+
+## ✨ Project Overview
+
+The Interactive Platform for Recitation and Learning the Qur’an is a comprehensive web and mobile-based educational ecosystem designed to democratize high-quality Quranic education. It directly addresses the critical need for competent Tajweed supervision and provides structured, global earning opportunities for qualified teachers (Sheikhs/Huffaz).
+
+This platform solves two major real-world problems simultaneously:
+
+1. **Inaccessibility of Competent Supervision:** Millions of Muslims worldwide—especially those in non-Arab or non-Muslim-majority countries—struggle to find qualified supervisors to memorize or perfect their recitation (**Tarteel** and **Hifz**).
     
-2. **A structured client–server model**, including a database-backed platform that manages students, sheikhs, sessions, payments, evaluations, and recitation records.
-    
-3. **Integration of AI evaluation into real user workflows**, where students submit recitations, the model processes them, and sheikhs can later review or override feedback.
+2. **Under-utilized Expertise:** Thousands of highly qualified Sheikhs and Huffaz possess excellent recitation skills but lack structured, global, and reliable opportunities to teach and earn from their valuable expertise.
     
 
-The methodology begins with **collecting and preprocessing Qur’anic audio samples** using the QDAT dataset. Audio recordings are transformed into **normalized mel-spectrograms**, enabling visual feature extraction using convolutional neural networks. An enhanced **EfficientNet-B0 architecture with Squeeze-and-Excitation (SE) attention blocks** is used to classify and evaluate the correctness of targeted Tajweed rules. The model is trained, validated, and compared against existing benchmarks using accuracy, confusion matrices, and reliability metrics. For the platform layer, a normalized **relational database schema** is designed with strong constraints, integrity rules, and secure handling of user roles (student, sheikh, admin), payment operations, and session workflows. RESTful APIs are used for interaction with the frontend.
+By combining the depth of **human expertise** with the scalability of **Artificial Intelligence**, the platform mimics the traditional “Halaqat al-Qur’an” (Quran circles) while making them globally accessible, affordable, and measurable 24/7.
 
-Results show that the system achieves **high accuracy across all rules**, surpassing previously published scores, proving the effectiveness of mel-spectrogram–based deep learning for Tajweed evaluation. The platform design ensures scalability, security against SQL injection, complete entity–relationship modeling, and support for real structured learning cycles between students and sheikhs.
+## ⚙️ Core Functionality
 
-This project demonstrates a practical path toward **AI-assisted Qur’an education**, bridging traditional learning with modern technology. It offers a unified framework combining machine learning, database systems, and user experience design—ultimately enabling real-time, accessible, and standardized Tajweed evaluation for learners worldwide.
+The platform operates on two powerful and complementary layers:
+
+### 1. Human-to-Human Layer (Live Supervised Sessions)
+
+This layer focuses on **personalized, high-quality, live instruction** with certified teachers.
+
+- **Teacher Discovery & Booking:** Students can easily browse, filter, and book certified Sheikhs based on crucial criteria:
+    
+    - **Recitation Style:** Accent (e.g., Egyptian, Saudi) and Riwayah (e.g., Hafs 'an 'Asim, Warsh 'an Nafi').
+        
+    - **Credentials:** Years of experience, hourly rate, and user ratings.
+        
+    - **Preference:** Gender preference and mother tongue.
+        
+    - **Availability:** Real-time scheduling and time zone handling.
+        
+- **Integrated Session Tools:** Sessions are conducted via high-quality audio/video calls with essential built-in features:
+    
+    - Secure, end-to-end **Payment Processing**.
+        
+    - **Session Recording** (optional, for student review).
+        
+    - **Real-time Note-Taking & Mistake Tracking** (for both student and teacher).
+        
+- **Progress & Accountability:** Post-session progress reports and secure, automated payment distribution (platform takes a small, fair commission; Sheikh receives the majority).
+    
+
+### 2. Human-to-AI Layer (Autonomous Practice & Assessment)
+
+This layer provides **instant, round-the-clock feedback** for independent practice, leveraging cutting-edge AI.
+
+- **AI-Powered Recitation Evaluation:** Users can practice independently by reciting in real-time or analyzing uploaded recordings.
+    
+- **Instant, Detailed Feedback:** The AI provides precise, time-stamped feedback categorized into three levels of error:
+    
+    1. **Linguistic Mistakes (أخطاء لغوية):** Errors in Arabic phonology or grammar.
+        
+    2. **Diacritics Mistakes (أخطاء تشكيل):** Errors in Vowel/Tashkeel placement (Fatha, Damma, Kasra, Sukun).
+        
+    3. **Tajweed Rule Violations (أخطاء تجويد):** Errors related to the rules of recitation (e.g., Idgham, Ikhfaa, Madd).
+        
+- **Guidance and Tracking:** The AI highlights the exact locations of errors, suggests the correct recitation, and tracks the user's long-term progress and recurrent error patterns.
+    
+
+## 🚀 Recommended Project Scope
+
+### MVP (Minimum Viable Product) – Graduation Project Scope
+
+The initial focus will be on validating the core value propositions and building the foundational infrastructure for both layers.
+
+| Feature          | Scope                                                                                                                                                                                | Status |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| **User Roles**   | Basic Student & Teacher/Sheikh profiles (login, registration, profile management).                                                                                                   | [x]    |
+| **Human Layer**  | **Teacher Profile Showcase** (basic filtering) and a **Basic Scheduling/Booking System** (manual approval/confirmation).                                                             | [ ]    |
+| **Live Session** | **Basic Audio/Video Call** integration with a simple, integrated **Mistake Tracking Log** (teacher manually inputs errors).                                                          | [ ]    |
+| **Payment**      | Placeholder or integration with a sandbox payment gateway (no live transactions yet).                                                                                                | [ ]    |
+| **AI Layer**     | **Core Recitation Evaluation Engine** for a **limited set of Surahs/Juz'** (e.g., Juz' Amma) focusing on high-accuracy detection of **Tashkeel** and a few **major Tajweed errors**. | [ ]    |
+| **Practice**     | Ability to **upload an audio file** and receive an analysis report.                                                                                                                  | [ ]    |
