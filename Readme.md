@@ -66,12 +66,61 @@ This layer provides **instant, round-the-clock feedback** for independent practi
 ### MVP (Minimum Viable Product) – Graduation Project Scope
 
 The initial focus will be on validating the core value propositions and building the foundational infrastructure for both layers.
+### 👤 User Roles 
 
-| Feature          | Scope                                                                                                                                                                                | Status |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| **User Roles**   | Basic Student & Teacher/Sheikh profiles (login, registration, profile management).                                                                                                   | [x]    |
-| **Human Layer**  | **Teacher Profile Showcase** (basic filtering) and a **Basic Scheduling/Booking System** (manual approval/confirmation).                                                             | [ ]    |
-| **Live Session** | **Basic Audio/Video Call** integration with a simple, integrated **Mistake Tracking Log** (teacher manually inputs errors).                                                          | [ ]    |
-| **Payment**      | Placeholder or integration with a sandbox payment gateway (no live transactions yet).                                                                                                | [ ]    |
-| **AI Layer**     | **Core Recitation Evaluation Engine** for a **limited set of Surahs/Juz'** (e.g., Juz' Amma) focusing on high-accuracy detection of **Tashkeel** and a few **major Tajweed errors**. | [ ]    |
-| **Practice**     | Ability to **upload an audio file** and receive an analysis report.                                                                                                                  | [ ]    |
+- [ ] Design basic database schema for `Student` and `Teacher` profiles.
+    
+- [ ] Implement registration and login functionality.
+    
+- [ ] Create profile view/edit pages for both roles.
+    
+
+### 🧑‍🏫 Human Layer (Teacher Profiles & Booking)
+
+- [ ] Build the **Teacher Profile Showcase** list view.
+    
+- [ ] Implement basic filtering for accent/Riwayah (e.g., Hafs, Warsh) and hourly rate.
+    
+- [ ] Create the **Basic Scheduling** interface for teachers to set availability.
+    
+- [ ] Design the booking request form for students.
+    
+- [ ] Implement the email-based **manual approval/confirmation** flow.
+    
+
+### 📞 Live Session
+
+- [ ] Integrate a third-party **Audio/Video Call** service (e.g., WebRTC framework or a service like Daily/Twilio).
+    
+- [ ] Develop a simple text-based **Mistake Tracking Log** interface for the Sheikh.
+    
+- [ ] Ensure session access is restricted to booked users only.
+    
+
+### 💰 Payment
+
+- [ ] Select a payment gateway (e.g., Stripe/PayPal) for future integration.
+    
+- [ ] Integrate the chosen gateway's **sandbox environment**.
+    
+- [ ] Implement logic for charging a placeholder fee upon booking (no real transactions).
+    
+
+### 🤖 AI Layer
+
+- [ ] Establish the backend server for the **Recitation Evaluation Engine**.
+    
+- [ ] Source/Prepare training data specifically for **Juz' Amma**.
+    
+- [ ] Develop the initial model for detecting **Tashkeel** mistakes.
+    
+- [ ] Develop the initial model for detecting a few **major Tajweed errors** (e.g., _Madd_ extension errors).
+    
+
+### 🎧 Practice
+
+- [ ] Implement the front-end interface for users to **upload an audio file**.
+    
+- [ ] Create the API endpoint to send the uploaded audio to the AI evaluation engine.
+    
+- [ ] Design and display a structured analysis report from the AI feedback.
