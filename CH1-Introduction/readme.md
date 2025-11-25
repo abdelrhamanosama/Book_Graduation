@@ -64,12 +64,13 @@ To design and implement a scalable, secure, and user-friendly web and mobile pla
 2. Implement an intelligent Sheikh discovery and filtering system.
 3. Build a complete session lifecycle system (booking → payment → live call → feedback → payout).
 4. Integrate a high-quality WebRTC audio/video communication layer.
-5. Develop or fine-tune an AI model capable of detecting and classifying the three categories of recitation mistakes with high accuracy.
+5. Develop or fine-tune an AI model capable of detecting recitation mistakes with high accuracy.
 6. Create detailed progress tracking and reporting dashboards for students and Sheikhs.
 7. Ensure all financial transactions are secure, transparent, and Shariah-compliant (escrow model).
 8. Design a responsive interface usable on desktop, tablets, and smartphones.
 9. Achieve at least 85% accuracy on the AI Tajweed assessment engine (measured against human expert annotations).
-10. Deploy a production-ready MVP by the graduation project deadline.
+10. A report generation system for students.
+11. Deploy a production-ready MVP by the graduation project deadline.
 
 ## 1.4. Project Scope
 
@@ -82,7 +83,9 @@ To design and implement a scalable, secure, and user-friendly web and mobile pla
 - Session booking with calendar and pending-approval mechanism
 - WebRTC live audio/video sessions with recording option
 - Post-session rating, notes, and mistake reports
+- Preprocessing recorded audio for AI
 - AI recitation assessment (real-time or upload-based) with three-level mistake classification
+- Report generation system
 - Progress dashboard and history
 - Responsive web interface (PWA-ready)
 - Complete backend APIs, and PostgreSQL database
@@ -137,7 +140,7 @@ To design and implement a scalable, secure, and user-friendly web and mobile pla
 |                                      | Session timer, recording, notes, rating   | 20 days  | 15/06/2025 | 04/07/2025 |
 | **Sprint 7 – AI Assessment**         | Real-time/upload recitation recording     | 18 days  | 06/07/2025 | 23/07/2025 |
 |                                      | AI backend API integration                | 25 days  | 15/07/2025 | 08/08/2025 |
-|                                      | Mistake visualization (3 categories)      | 20 days  | 25/07/2025 | 13/08/2025 |
+|                                      | Mistake visualization                     | 20 days  | 25/07/2025 | 13/08/2025 |
 | **Sprint 8 – Dashboards**            | Student & Sheikh dashboards               | 25 days  | 14/08/2025 | 07/09/2025 |
 |                                      | Progress reports & charts                 | 15 days  | 01/09/2025 | 15/09/2025 |
 | **Sprint 9 – Testing & Polish**      | Full testing (unit + integration + E2E)   | 20 days  | 08/09/2025 | 27/09/2025 |
