@@ -15,7 +15,12 @@ The core problems that this project addresses can be summarized as follows:
 4. Absence of Objective, Instant Feedback During Independent Practice When a live Sheikh is not available (e.g., late at night), students have no reliable way to know whether they are making linguistic, Tashkeel, or Tajweed mistakes.
 5. Under-Utilization of Qualified Human Resources Thousands of certified Sheikhs and Sheikhas worldwide possess excellent recitation skills but have no easy, trustworthy way to reach students globally and monetize their expertise fairly.
 6. Lack of Measurable Long-Term Progress Tracking Students and teachers currently rely on subjective memory rather than data-driven reports showing improvement over months and years.
-
+7. Limited scalability (one teacher cannot evaluate many students).
+8. Slow review cycles and high workload on teachers.
+9. Difficulty pinpointing exact time-based errors.
+10. Lack of structured data to track student improvement over time.
+11. No instant feedback for the student after recitation.
+12. Students require the ability to practice recitation repeatedly at any time.
 
 ## 1.2. Suggested Solution – “Qur’anConnect” Platform
 
