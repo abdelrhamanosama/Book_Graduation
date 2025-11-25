@@ -42,11 +42,11 @@ It processes an audio file, extracts the spoken text, compares it with the corre
 - Real-time or post-recitation visual feedback highlighting exact mistake locations in the verse.
 - Long-term progress dashboard with statistics and improvement trends.
 - AI Pipeline for Handling Recitation:
-  Layer 1 → Audio Separation (Model)
-  Layer 2 → Audio Filtering (Python DSP)
-  Layer 3 → ASR — Speech Recognition
-  Layer 4 → Text & Acoustic Comparison
-  Layer 5 → Report Generation
+  - Layer 1 → Audio Separation (Model)
+  - Layer 2 → Audio Filtering (Python DSP)
+  - Layer 3 → ASR — Speech Recognition
+  - Layer 4 → Text & Acoustic Comparison
+  - Layer 5 → Report Generation
  
   
 By merging verified human teachers with always-available AI correction, the platform offers the best of both worlds: the spiritual and motivational impact of a real Sheikh when possible, and accurate, tireless practice and correction at any hour.
